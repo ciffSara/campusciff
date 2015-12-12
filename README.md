@@ -1,35 +1,78 @@
-# campusciff
+# Campusciff
 Repositorio para ejercicios GIT, GITHUB, MARKDOWN
 
 #Realizamos la configuración inicial.
-
+```sh
 soterod@SOTERODW7 MINGW64 /
 $ git config --global user.name "Sara"
 
 soterod@SOTERODW7 MINGW64 /
 $ git config --global user.email saraotero@campusciff.net
+```
+#Creamos un Nuevo directorio llamado EJERCICIOS:
 
-#Creamos un Nuevo directorio llamado EJERCICIOS.
-
+```sh
 soterod@SOTERODW7 MINGW64 /
 $ mkdir EJERCICIOS
-
+```
 Nos situamos en la carpeta EJERCICIOS
-
+```sh
 soterod@SOTERODW7 MINGW64 /
 $ cd EJERCICIOS
-
+```
 Inicializamos el repositorio
+```sh
+soterod@SOTERODW7 MINGW64 /EJERCICIOS# (GitHub-Flavored) Markdown Editor
 
-soterod@SOTERODW7 MINGW64 /EJERCICIOS
+Basic useful feature list:
+
+ * Ctrl+S / Cmd+S to save the file
+ * Ctrl+Shift+S / Cmd+Shift+S to choose to save as Markdown or HTML
+ * Drag and drop a file into here to load it
+ * File contents are saved in the URL so you can share files
+
+
+I'm no good at writing sample / filler text, so go write something yourself.
+
+Look, a list!
+
+ * foo
+ * bar
+ * baz
+
+And here's some code! :+1:
+
+```javascript
+$(function(){
+  $('div').html('I am a div.');
+});
+```
+
+This is [on GitHub](https://github.com/jbt/markdown-editor) so let me know if I've b0rked it somewhere.
+
+
+Props to Mr. Doob and his [code editor](http://mrdoob.com/projects/code-editor/), from which
+the inspiration to this, and some handy implementation hints, came.
+
+### Stuff used to make this:
+
+ * [markdown-it](https://github.com/markdown-it/markdown-it) for Markdown parsing
+ * [CodeMirror](http://codemirror.net/) for the awesome syntax-highlighted editor
+ * [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) for syntax highlighting in output code blocks
+ * [js-deflate](https://github.com/dankogai/js-deflate) for gzipping of data to make it fit in URLs
+
 $ git init
 Initialized empty Git repository in C:/Program Files/Git/EJERCICIOS/.git/
+```
+
 #2.1 REPOSITORIO CAMPUSCIFF
-1 Creamos un Nuevo repositorio en GITHUB llamado campusciff
+
+**1 Creamos un Nuevo repositorio en GITHUB llamado campusciff**
+
 ![Repositorio](/img/repositorio.jpg)
 
-2 Clonamos este nuevo repositorio en la carpeta EJERCICIOS
-
+**2 Clonamos este nuevo repositorio en la carpeta EJERCICIOS**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS (master)
 $ git clone git@github.com:ciffSara/campusciff.git
 Cloning into 'campusciff'...
@@ -39,30 +82,38 @@ remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Receiving objects: 100% (3/3), done.
 Checking connectivity... done.
-
+```
 Comprobamos que efectivamente se ha actualizado el contenido de la carpeta
 
 ![Carpeta](/img/carpeta.jpg)
+
 #2.2 README
+
 Y que en el interior de la carpeta campusciff, está el fichero README.md
 
-(/img/intCarpeta.jpg)
+![interior de la carpeta](/img/intCarpeta.jpg)
+
 #2.3 COMMIT Y PUSH INICIAL
+
 Nos situamos en la carpeta campusciff.
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS (master)
 $ cd campusciff
-
-Subimos el fichero al Stagig area.
+```
+Subimos el fichero al Staging area.
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git add README.md
-
+```
 Subimos el fichero al repositorio local.
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git commit -m "Commit inicial"
 [master a464442] Commit inicial
  1 file changed, 50 insertions(+)
-
+```
 Subimos el fichero al repositorio remoto.
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git push origin master
 Enter passphrase for key '/c/Users/soterod/.ssh/id_rsa':
@@ -73,35 +124,42 @@ Writing objects: 100% (3/3), 846 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:ciffSara/campusciff.git
    41483ed..a464442  master -> master
-   
+```
 #2.4 IGNORAR ARCHIVOS
+
 Creamos en local un fichero privado.txt
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ echo privado>privado.txt
-
+```
 Creamos una carpeta con el nombre de privada.
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ mkdir privada
-
+```
 Comprobamos que se han creado correctamente
 ![Carpeta privada](/img/privada.jpg)
 
 Creamos un fichero .gitignore con el nombre de los ficheros/carpetas que 
 queremos que git ignore.
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ echo privada > .gitignore
-
+```
 Añadimos el nombre del fichero.
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ echo privado.txt >> .gitignore
-
+```
 Comprobamos el contenido del fichero .gitignore
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ cat .gitignore
 privada
 privado.txt
-
+```
 Subimos este nuevo fichero al repositorio local
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git add .gitignore
 warning: LF will be replaced by CRLF in .gitignore.
@@ -114,8 +172,9 @@ warning: LF will be replaced by CRLF in .gitignore.
 The file will have its original line endings in your working directory.
  1 file changed, 2 insertions(+)
  create mode 100644 .gitignore
-
+```
 Para comprobar que GIT ha ignorado los archivos indicados subimos al repositorio remoto.
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git push origin master
 Enter passphrase for key '/c/Users/soterod/.ssh/id_rsa':
@@ -126,19 +185,26 @@ Writing objects: 100% (3/3), 304 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:ciffSara/campusciff.git
    a464442..47690f8  master -> master
-
+```
 Y observamos que únicamente se ha subido el fichero .gitignore
-(/img/gitignore1.jpg)
+
+![Ficheros privados](/img/gitignore1.jpg)
+
 Comprobamos también el contenido del fichero .gitignore
-(/img/gitignore2.jpg)
+
+![Fichero gitignore](/img/gitignore2.jpg)
+
 Donde aparecen los nombres de los archivos a ignorar.
 
 #2.5 CREAR EL TAG V0.1
-1 Creamos un fichero, 1.txt
+
+**1 Creamos un fichero, 1.txt**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ echo 1 > 1.txt
-
+```
 Subimos ese nuevo fichero al repositorio local
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git add 1.txt
 warning: LF will be replaced by CRLF in 1.txt.
@@ -151,12 +217,14 @@ warning: LF will be replaced by CRLF in 1.txt.
 The file will have its original line endings in your working directory.
  1 file changed, 1 insertion(+)
  create mode 100644 1.txt
-
-2 Creamos una etiqueta
+```
+**2 Creamos una etiqueta**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git tag "v0.1"
-
+```
 Comprobamos que se ha creado la etiqueta.
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git tag
 v0.1
@@ -176,8 +244,9 @@ index 0000000..d00491f
 +++ b/1.txt
 @@ -0,0 +1 @@
 +1
-
-3 Subimos los cambios al repositorio remoto
+```
+**3 Subimos los cambios al repositorio remoto**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git push origin master
 Enter passphrase for key '/c/Users/soterod/.ssh/id_rsa':
@@ -188,37 +257,43 @@ Writing objects: 100% (3/3), 320 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:ciffSara/campusciff.git
    47690f8..43b6a6d  master -> master
-(/img/1.jpg)
+```
+![Fichero 1](/img/1.jpg)
 
 #2.6 CREAR UNA RAMA REMOTA V0.2
 
-1 Creamos una nueva rama v0.2
+**1 Creamos una nueva rama v0.2**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git branch v0.2
-
-2 posicionamos la carpeta de trabajo en dicha rama.
+```
+**2 posicionamos la carpeta de trabajo en dicha rama.**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git checkout v0.2
 Switched to branch 'v0.2'
 
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (v0.2)
 $
-
+```
 Subimos la rama al repositorio remoto
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (v0.2)
 $ git push origin v0.2
 Enter passphrase for key '/c/Users/soterod/.ssh/id_rsa':
 Total 0 (delta 0), reused 0 (delta 0)
 To git@github.com:ciffSara/campusciff.git
  * [new branch]      v0.2 -> v0.2
+```
+![Rama](/img/rama v02.jpg)
 
-(/img/rama v0.2.jpg)
-
-3 Añadimos el nuevo fichero 2.txt a la rama v0.2
+**3 Añadimos el nuevo fichero 2.txt a la rama v0.2**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (v0.2)
 $ echo 2 > 2.txt
-
-4 Y lo subimos al repositorio remoto
+```
+**4 Y lo subimos al repositorio remoto**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (v0.2)
 $ git add 2.txt
 warning: LF will be replaced by CRLF in 2.txt.
@@ -242,10 +317,13 @@ Writing objects: 100% (3/3), 354 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:ciffSara/campusciff.git
    43b6a6d..ccc9617  v0.2 -> v0.2
-
+```
 ![Comprobamos en GITHUB el contenido de la nueva rama](/img/rama v2.jpg)
+
 #2.7 MERGE DIRECTO
-1 Nos volvemos a posicionar en la rama master
+
+**1 Nos volvemos a posicionar en la rama master**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (v0.2)
 $ git checkout master
 Switched to branch 'master'
@@ -253,8 +331,9 @@ Your branch is up-to-date with 'origin/master'.
 
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $
-
-2 Hacemos un merge de la rama v0.2
+```
+**2 Hacemos un merge de la rama v0.2**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git merge v0.2
 Updating 43b6a6d..ccc9617
@@ -262,8 +341,9 @@ Fast-forward
  2.txt | 1 +
  1 file changed, 1 insertion(+)
  create mode 100644 2.txt
-
+```
 Merge sin conflictos.
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git list
 * ccc9617 (HEAD -> master, origin/v0.2, v0.2) Subimos el fichero 2.txt a la rama v0.2
@@ -271,12 +351,15 @@ $ git list
 * 47690f8 Añadimos .gitignore
 * a464442 Commit inicial
 * 41483ed Initial commit
+```
 ![Comprobamos el contenido de la rama master en GitHub](/img/merge sin conflictos.jpg)
 
 Dónde ahora aparece también el fichero 2.txt
 
 #2.8 MERGE CON CONFLICTO
-1 Añadimos la palabra Hola al fichero 1.txt de la rama master
+
+**1 Añadimos la palabra Hola al fichero 1.txt de la rama master**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ echo Hola >> 1.txt
 
@@ -284,8 +367,9 @@ soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ cat 1.txt
 1
 Hola
-
+```
 Subimos los cambios al repositorio local
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git add .
 warning: LF will be replaced by CRLF in 1.txt.
@@ -299,31 +383,36 @@ The file will have its original line endings in your working directory.
 warning: LF will be replaced by CRLF in 1.txt.
 The file will have its original line endings in your working directory.
  1 files changed, 1 insertions(+)
- 
-2 Cambiamos a la rama v0.2
+ ```
+**2 Cambiamos a la rama v0.2**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git checkout v0.2
 Switched to branch 'v0.2'
 
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (v0.2)
 $
-
+```
 Comprobamos el contenido del fichero 1.txt
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (v0.2)
 $ cat 1.txt
 1
-
+```
 Añadimos la palabra Adios al fichero
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (v0.2)
 $ echo Adios >> 1.txt
-
+```
 Comprobamos que se ha añadido el nuevo texto
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (v0.2)
 $ cat 1.txt
 1
 Adios
-
+```
 Subimos los cambios al repositorio local
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (v0.2)
 $ git add .
 warning: LF will be replaced by CRLF in 1.txt.
@@ -337,8 +426,9 @@ b0e932b] Modificación del fichero 1.txt en la rama v0.2
 warning: LF will be replaced by CRLF in 1.txt.
 The file will have its original line endings in your working directory.
  1 file changed, 1 insertion(+)
-
-3 Nos volvemos a posicionar en la rama master
+```
+**3 Nos volvemos a posicionar en la rama master**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (v0.2)
 $ git checkout master
 Switched to branch 'master'
@@ -346,8 +436,9 @@ Your branch is up-to-date with 'origin/master'.
 
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $
-
+```
 Y hacemos un merge con la rama v0.2
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git merge v0.2
 Auto-merging 1.txt
@@ -356,29 +447,28 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master|MERGING)
 $
-
+```
 Se ha producido un conflicto ya que el fichero 1.txt contiene distinta información en ambas ramas.
-
+```sh
 1
 <<<<<<< HEAD
 Hola
 =======
 Adios
 >>>>>>> v0.2
-
-4 Listamos las ramas con merge y sin
-
+```
+**4 Listamos las ramas con merge y sin**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master|MERGING)
 $ git branch --merged
 * master
 
-
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master|MERGING)
 $ git branch --no-merged
   v0.2
-
-5 Solucionamos el conflicto modificando los archivos 1.txt de ambas ramas.
-
+```
+**5 Solucionamos el conflicto modificando los archivos 1.txt de ambas ramas.**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master|MERGING)
 $ echo Adios>1.txt
 
@@ -394,8 +484,9 @@ The file will have its original line endings in your working directory.
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master|MERGING)
 $ git commit -m "Modificamos 1.txt para solucionar conflictos rama master"
 [master 5e034f2] Modificamos 1.txt para solucionar conflictos rama master
-
+```
 Y la rama v0.2
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git checkout v0.2
 Switched to branch 'v0.2'
@@ -420,17 +511,19 @@ The file will have its original line endings in your working directory.
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (v0.2)
 $ cat 1.txt
 Adios
-
-#Volvemos a hacer el merge
-
+```sh
+Volvemos a hacer el merge
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git merge v0.2 -m "Merge tras arreglar los conflictos"
 Already up-to-date.
-
+```
 Y ahora indica que los fichero son iguales, tal y como esperábamos.
 
 #2.9 BORRAR RAMA
-1 Creamos una nueva etiqueta v0.2
+
+**1 Creamos una nueva etiqueta v0.2**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git tag v0.2
 
@@ -438,9 +531,9 @@ soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git tag
 v0.1
 v0.2
-
-2 Listamos los commits, las ramas y las etiquetas realizadas.
-
+```
+**2 Listamos los commits, las ramas y las etiquetas realizadas.**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git list
 *   89f6b8c (HEAD -> master, tag: v0.2) Merge branch 'v0.2'
@@ -459,15 +552,15 @@ $ git list
 * 47690f8 Añadimos .gitignore
 * a464442 Commit inicial
 * 41483ed Initial commit
-
-3 Borramos la rama v0.2 del repositorio local
-
+```
+**3 Borramos la rama v0.2 del repositorio local**
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git branch -d v0.2
 Deleted branch v0.2 (was 8a1c872).
-
-Comprobamos que ya solo aparece la rama master.
-
+```
+Comprobamos que ya sólo aparece la rama master.
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git branch
 * master
@@ -475,27 +568,38 @@ $ git branch
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ git branch -v
 * master 89f6b8c [ahead 4] Merge branch 'v0.2'
-
+```
 #2.10 CUENTA DE GITHUB
-1 Añadir foto al perfil de GitHub
+
+**1 Añadir foto al perfil de GitHub**
+
 ![Foto perfil](/img/foto perfil.jpg)
 
-2 Poner doble factor de autentificación
+**2 Poner doble factor de autentificación**
+
 ![Two-Factor authentication](/img/autentificacion.jpg)
 
-3 Comprobar que tenemos la clave pública en el ordenador
+**3 Comprobar que tenemos la clave pública en el ordenador**
+
 ![SSH Keys](/img/SSH Key.jpg)
 
 #2.11 USO SOCIAL DE GITHUB
-1 Seguir a los compañeros de clase
+
+**1 Seguir a los compañeros de clase**
+
 ![Compañeros de clase](/img/following.jpg)
-2 Seguir los repositorios campusciff de los compañeros
-(/img/watch.jpg)
-3 Añadir estrellas a los repositorios campusciff de los compañeros.
+
+**2 Seguir los repositorios campusciff de los compañeros**
+
+![Repositorios campusciff](/img/watch.jpg)
+
+**3 Añadir estrellas a los repositorios campusciff de los compañeros.**
+
 ![Estrellas](/img/estrellas.jpg)
 
 #2.12 CREAR UNA TABLA
-1 Crear una tabla con el nombre y el enlace a github de varios compañeros
+
+**1 Crear una tabla con el nombre y el enlace a github de varios compañeros**
 
 NOMBRE | GITHUB 
 -------|-------
@@ -504,23 +608,36 @@ José Dios |https://github.com/jrdios
 asuarezg|https://github.com/asuarezg
 
 #2.13 COLABORADORES
+Añadir colaboradores
+
 ![Añadir colaborador](/img/colaborador.jpg)
 
 #2.14 CREAR UNA ORGANIZACIÓN
+
 ![Crear una organización](/img/organizacion.jpg)
 
 #2.15 CREAR EQUIPOS
-1 Crear dos equipos en la organización
+
+**1 Crear dos equipos en la organización**
+
+Crear un equipo de administradores y otro de colaboradores, este último con menos permisos:
+
 ![Equipo de administradores y equipo de colaboradores](/img/equipos.jpg)
-2 Invitamos a 3 al equipo de administradores
+
+**2 Invitamos a 3 personas al equipo de administradores**
+
 ![Administradores](/img/admin.jpg)
-3 Invitamos a 3 al equipo de colaboradores
+
+**3 Invitamos a 3 personas al equipo de colaboradores**
+
 ![Colaboradores](/img/colaboradores.jpg)
 
 #2.16 CREAR UN INDEX.HTML
-1 Crear un index.html
-Creamos un archivo html
-Lo subimos al repositorio
+
+**1 Crear un index.html**
+
+Creamos un archivo html y lo subimos al repositorio
+```sh
 soterod@SOTERODW7 MINGW64 /
 $ cd EJERCICIOS
 
@@ -557,15 +674,21 @@ Writing objects: 100% (3/3), 312 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:campusciff-ciffSara/campusciff-ciffSara.github.io.git
  * [new branch]      master -> master
-
+```
 Comprobamos que se ha subido
+
 ![Archivo index](/img/index.jpg)
+
+###Link a la página wed de la organización
 
 [Página web de la organización](https://campusciff-ciffsara.github.io)
 
 #2.17 CREAR PULL-REQUESTS
-1 Hacer dos forks
+
+**1 Hacer dos forks**
+
 Fork 1
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff-ciffSara.github.io (master)
 $ cd -
 /EJERCICIOS
@@ -580,8 +703,9 @@ remote: Total 9 (delta 1), reused 9 (delta 1), pack-reused 0
 Receiving objects: 100% (9/9), done.
 Resolving deltas: 100% (1/1), done.
 Checking connectivity... done.
-
+```
 Fork 2
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS (master)
 $ git clone git@github.com:campusciff-ciffSara/campusciff-macarenagaranena.github.io.git
 Cloning into 'campusciff-macarenagaranena.github.io'...
@@ -594,9 +718,12 @@ Checking connectivity... done.
 
 soterod@SOTERODW7 MINGW64 /EJERCICIOS (master)
 $ cd campusciff-macarenagaranena.github.io
+```
 
-2 Creamos una rama en cada fork
+**2 Creamos una rama en cada fork**
+
 Fork 1
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS (master)
 $ cd campusciff-Miriam-Asenjo.github.io
 
@@ -605,14 +732,17 @@ $ git checkout -b ramaSara
 Switched to a new branch 'ramaSara'
 
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff-Miriam-Asenjo.github.io (ramaSara)
-
+```
 Fork 2
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff-macarenagaranena.github.io (ramaSara)
 $ cd -
 /EJERCICIOS
+```
+**3 Modificamos el fichero index**
 
-3 Modificamos el fichero index
 Fork 1
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS (master)
 $ cd campusciff-Miriam-Asenjo.github.io
 
@@ -634,8 +764,12 @@ Writing objects: 100% (3/3), 375 bytes | 0 bytes/s, done.
 Total 3 (delta 1), reused 0 (delta 0)
 To git@github.com:campusciff-ciffSara/campusciff-Miriam-Asenjo.github.io.git
  * [new branch]      ramaSara -> ramaSara
+```
+
 ![Index modificado](/img/index1.jpg)
+
 Fork 2
+```sh
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff-macarenagaranena.github.io (ramaSara)
 $ git add index.html
 
@@ -654,13 +788,21 @@ Writing objects: 100% (3/3), 385 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:campusciff-ciffSara/campusciff-macarenagaranena.github.io.git
  * [new branch]      ramaSara -> ramaSara
+ ```
+ 
 ![Index modificado](/img/index2.jpg)
 
-4 Hacer pull request 
+**4 Hacer pull request **
+
+Pull request del primer folk:
 
 ![Pull Request del primer folk](/img/pullRequest2.jpg)
+
+Pull request del segundo folk:
+
 ![Pull Request del segundo folk](/img/pullRequest1.jpg)
 
 #2.18 GESTIONAR PULL-REQUESTS
+
 Aceptar los pull-request que lleguen a los
 repositorios de tu organización.
