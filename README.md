@@ -26,7 +26,7 @@ $ git init
 Initialized empty Git repository in C:/Program Files/Git/EJERCICIOS/.git/
 #2.1 REPOSITORIO CAMPUSCIFF
 1 Creamos un Nuevo repositorio en GITHUB llamado campusciff
-![Repositorio](.../img/repositorio.jpg)
+![Repositorio](/img/repositorio.jpg)
 
 2 Clonamos este nuevo repositorio en la carpeta EJERCICIOS
 
@@ -42,11 +42,11 @@ Checking connectivity... done.
 
 Comprobamos que efectivamente se ha actualizado el contenido de la carpeta
 
-![Carpeta](.../img/carpeta.jpg)
+![Carpeta](/img/carpeta.jpg)
 #2.2 README
 Y que en el interior de la carpeta campusciff, está el fichero README.md
 
-(.../img/intCarpeta.jpg)
+(/img/intCarpeta.jpg)
 #2.3 COMMIT Y PUSH INICIAL
 Nos situamos en la carpeta campusciff.
 soterod@SOTERODW7 MINGW64 /EJERCICIOS (master)
@@ -84,7 +84,7 @@ soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (master)
 $ mkdir privada
 
 Comprobamos que se han creado correctamente
-![Carpeta privada](.../img/privada.jpg)
+![Carpeta privada](/img/privada.jpg)
 
 Creamos un fichero .gitignore con el nombre de los ficheros/carpetas que 
 queremos que git ignore.
@@ -128,9 +128,9 @@ To git@github.com:ciffSara/campusciff.git
    a464442..47690f8  master -> master
 
 Y observamos que únicamente se ha subido el fichero .gitignore
-(.../img/gitignore1.jpg)
+(/img/gitignore1.jpg)
 Comprobamos también el contenido del fichero .gitignore
-(.../img/gitignore2.jpg)
+(/img/gitignore2.jpg)
 Donde aparecen los nombres de los archivos a ignorar.
 
 #2.5 CREAR EL TAG V0.1
@@ -188,7 +188,7 @@ Writing objects: 100% (3/3), 320 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:ciffSara/campusciff.git
    47690f8..43b6a6d  master -> master
-(.../img/1.jpg)
+(/img/1.jpg)
 
 #2.6 CREAR UNA RAMA REMOTA V0.2
 
@@ -212,7 +212,7 @@ Total 0 (delta 0), reused 0 (delta 0)
 To git@github.com:ciffSara/campusciff.git
  * [new branch]      v0.2 -> v0.2
 
-(.../img/rama v0.2.jpg)
+(/img/rama v0.2.jpg)
 
 3 Añadimos el nuevo fichero 2.txt a la rama v0.2
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (v0.2)
@@ -243,7 +243,7 @@ Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:ciffSara/campusciff.git
    43b6a6d..ccc9617  v0.2 -> v0.2
 
-![Comprobamos en GITHUB el contenido de la nueva rama](.../img/rama v2.jpg)
+![Comprobamos en GITHUB el contenido de la nueva rama](/img/rama v2.jpg)
 #2.7 MERGE DIRECTO
 1 Nos volvemos a posicionar en la rama master
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff (v0.2)
@@ -271,7 +271,7 @@ $ git list
 * 47690f8 Añadimos .gitignore
 * a464442 Commit inicial
 * 41483ed Initial commit
-![Comprobamos el contenido de la rama master en GitHub](.../img/merge sin conflictos.jpg)
+![Comprobamos el contenido de la rama master en GitHub](/img/merge sin conflictos.jpg)
 
 Dónde ahora aparece también el fichero 2.txt
 
@@ -478,21 +478,21 @@ $ git branch -v
 
 #2.10 CUENTA DE GITHUB
 1 Añadir foto al perfil de GitHub
-![Foto perfil](.../img/foto perfil.jpg)
+![Foto perfil](/img/foto perfil.jpg)
 
 2 Poner doble factor de autentificación
-![Two-Factor authentication](.../img/autentificacion.jpg)
+![Two-Factor authentication](/img/autentificacion.jpg)
 
 3 Comprobar que tenemos la clave pública en el ordenador
-![SSH Keys](.../img/SSH Key.jpg)
+![SSH Keys](/img/SSH Key.jpg)
 
 #2.11 USO SOCIAL DE GITHUB
 1 Seguir a los compañeros de clase
-![Compañeros de clase](.../img/following.jpg)
+![Compañeros de clase](/img/following.jpg)
 2 Seguir los repositorios campusciff de los compañeros
-(.../img/watch.jpg)
+(/img/watch.jpg)
 3 Añadir estrellas a los repositorios campusciff de los compañeros.
-![Estrellas](.../img/estrellas.jpg)
+![Estrellas](/img/estrellas.jpg)
 
 #2.12 CREAR UNA TABLA
 1 Crear una tabla con el nombre y el enlace a github de varios compañeros
@@ -504,18 +504,18 @@ José Dios |https://github.com/jrdios
 asuarezg|https://github.com/asuarezg
 
 #2.13 COLABORADORES
-![Añadir colaborador](.../img/colaborador.jpg)
+![Añadir colaborador](/img/colaborador.jpg)
 
 #2.14 CREAR UNA ORGANIZACIÓN
-![Crear una organización](.../img/organizacion.jpg)
+![Crear una organización](/img/organizacion.jpg)
 
 #2.15 CREAR EQUIPOS
 1 Crear dos equipos en la organización
-![Equipo de administradores y equipo de colaboradores](.../img/equipos.jpg)
+![Equipo de administradores y equipo de colaboradores](/img/equipos.jpg)
 2 Invitamos a 3 al equipo de administradores
-![Administradores](.../img/admin.jpg)
+![Administradores](/img/admin.jpg)
 3 Invitamos a 3 al equipo de colaboradores
-![Colaboradores](.../img/colaboradores.jpg)
+![Colaboradores](/img/colaboradores.jpg)
 
 #2.16 CREAR UN INDEX.HTML
 1 Crear un index.html
@@ -559,9 +559,9 @@ To git@github.com:campusciff-ciffSara/campusciff-ciffSara.github.io.git
  * [new branch]      master -> master
 
 Comprobamos que se ha subido
-![Archivo index](.../img/index.jpg)
+![Archivo index](/img/index.jpg)
 
-[Página web de la organización](https://github.com/campusciff-ciffSara/campusciff-ciffSara.github.io)
+[Página web de la organización](https://campusciff-ciffsara.github.io)
 
 #2.17 CREAR PULL-REQUESTS
 1 Hacer dos forks
@@ -634,7 +634,7 @@ Writing objects: 100% (3/3), 375 bytes | 0 bytes/s, done.
 Total 3 (delta 1), reused 0 (delta 0)
 To git@github.com:campusciff-ciffSara/campusciff-Miriam-Asenjo.github.io.git
  * [new branch]      ramaSara -> ramaSara
-![Index modificado](.../img/index1.jpg)
+![Index modificado](/img/index1.jpg)
 Fork 2
 soterod@SOTERODW7 MINGW64 /EJERCICIOS/campusciff-macarenagaranena.github.io (ramaSara)
 $ git add index.html
@@ -654,9 +654,13 @@ Writing objects: 100% (3/3), 385 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:campusciff-ciffSara/campusciff-macarenagaranena.github.io.git
  * [new branch]      ramaSara -> ramaSara
-![Index modificado](.../img/index2.jpg)
+![Index modificado](/img/index2.jpg)
 
 4 Hacer pull request 
 
-![Pull Request del primer folk](.../img/pullRequest2.jpg)
-![Pull Request del segundo folk](.../img/pullRequest1.jpg)
+![Pull Request del primer folk](/img/pullRequest2.jpg)
+![Pull Request del segundo folk](/img/pullRequest1.jpg)
+
+#2.18 GESTIONAR PULL-REQUESTS
+Aceptar los pull-request que lleguen a los
+repositorios de tu organización.
