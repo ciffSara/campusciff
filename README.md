@@ -1,7 +1,7 @@
 # Campusciff
 Repositorio para ejercicios GIT, GITHUB, MARKDOWN
 
-#Realizamos la configuración inicial.
+**Realizamos la configuración inicial.**
 ```sh
 soterod@SOTERODW7 MINGW64 /
 $ git config --global user.name "Sara"
@@ -9,7 +9,7 @@ $ git config --global user.name "Sara"
 soterod@SOTERODW7 MINGW64 /
 $ git config --global user.email saraotero@campusciff.net
 ```
-#Creamos un Nuevo directorio llamado EJERCICIOS:
+**Creamos un Nuevo directorio llamado EJERCICIOS:**
 
 ```sh
 soterod@SOTERODW7 MINGW64 /
@@ -22,45 +22,7 @@ $ cd EJERCICIOS
 ```
 Inicializamos el repositorio
 ```sh
-soterod@SOTERODW7 MINGW64 /EJERCICIOS# (GitHub-Flavored) Markdown Editor
-
-Basic useful feature list:
-
- * Ctrl+S / Cmd+S to save the file
- * Ctrl+Shift+S / Cmd+Shift+S to choose to save as Markdown or HTML
- * Drag and drop a file into here to load it
- * File contents are saved in the URL so you can share files
-
-
-I'm no good at writing sample / filler text, so go write something yourself.
-
-Look, a list!
-
- * foo
- * bar
- * baz
-
-And here's some code! :+1:
-
-```javascript
-$(function(){
-  $('div').html('I am a div.');
-});
-```
-
-This is [on GitHub](https://github.com/jbt/markdown-editor) so let me know if I've b0rked it somewhere.
-
-
-Props to Mr. Doob and his [code editor](http://mrdoob.com/projects/code-editor/), from which
-the inspiration to this, and some handy implementation hints, came.
-
-### Stuff used to make this:
-
- * [markdown-it](https://github.com/markdown-it/markdown-it) for Markdown parsing
- * [CodeMirror](http://codemirror.net/) for the awesome syntax-highlighted editor
- * [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) for syntax highlighting in output code blocks
- * [js-deflate](https://github.com/dankogai/js-deflate) for gzipping of data to make it fit in URLs
-
+soterod@SOTERODW7 MINGW64 /EJERCICIOS# 
 $ git init
 Initialized empty Git repository in C:/Program Files/Git/EJERCICIOS/.git/
 ```
@@ -318,7 +280,7 @@ Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:ciffSara/campusciff.git
    43b6a6d..ccc9617  v0.2 -> v0.2
 ```
-![Comprobamos en GITHUB el contenido de la nueva rama](/img/rama v2.jpg)
+![Comprobamos en GITHUB el contenido de la nueva rama](/img/rama v02.jpg)
 
 #2.7 MERGE DIRECTO
 
@@ -792,7 +754,7 @@ To git@github.com:campusciff-ciffSara/campusciff-macarenagaranena.github.io.git
  
 ![Index modificado](/img/index2.jpg)
 
-**4 Hacer pull request **
+**4 Hacer pull request**
 
 Pull request del primer folk:
 
