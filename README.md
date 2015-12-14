@@ -768,3 +768,5 @@ Pull request del segundo folk:
 
 Aceptar los pull-request que lleguen a los
 repositorios de tu organización.
+
+![Pull Request aceptado](/img/PullRequestAceptado.jpg)
